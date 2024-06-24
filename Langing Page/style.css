@@ -1,0 +1,334 @@
+/* Resetting margins and paddings */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Gradient background with animation */
+.gradient-background {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(300deg, #f09fc8, #99c3eb, #e4a2ce);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Body section styling */
+.body {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Positioning for image */
+.womenImage {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile image styling */
+.profile-img {
+  justify-content: center;
+  display: block;
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+}
+
+/* Title with hover effects */
+.tls {
+  width: 500px;
+  height: 100px;
+  transition: width 2s, height 4s;
+}
+
+.tls:hover {
+  width: 200px;
+  height: 300px;
+}
+
+/* Image hover effect */
+.im:hover {
+  justify-content: center;
+  display: block;
+  border-radius: 50%;
+  height: 550px;
+  width: 550px; 
+}
+
+/* About section styling */
+.bd {
+  text-decoration: overline;
+  font-size: larger;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.bd:hover {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+/* Content sections */
+.content1, .content2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.content1 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Image styling */
+.black {
+  width: 100%;
+  height: auto;
+}
+
+.upbrd {
+  display: inline;
+  width: 100%;
+  text-decoration-line: overline;
+}
+
+/* Paragraph styling */
+.para {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Card and hover effect */
+.card {
+  padding: 2rem;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card:hover {
+  width: auto;
+}
+
+/* Our work section */
+.ow {
+  margin: 50px;
+  padding: 40px;
+  display: inline;
+  width: 100%;
+  max-width: 600px;
+  text-decoration-line: overline;
+}
+
+/* Card image styling */
+.imgg {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 2%;
+}
+
+.imgg:hover {
+  opacity: 0.3;
+  width: 15rem;
+  height: 12rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .body {
+      flex-direction: column;
+      margin-top: 50px;
+  }
+
+  .profile-img {
+      height: 350px;
+      width: 350px;
+  }
+
+  .cards{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+  .im:hover{
+    justify-content: center;
+    display: block;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px; 
+  }
+  .tls {
+      width: 400px;
+      height: 80px;
+  }
+
+  .tls:hover {
+      width: 150px;
+      height: 250px;
+  }
+
+  .bd {
+      font-size: large;
+      margin-left: 50px;
+  }
+
+  .content1, .content2 {
+      max-width: 500px;
+  }
+
+  .para {
+      max-width: 450px;
+  }
+
+  .imgg {
+      height: 14rem;
+      width: 14rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .body {
+      margin-top: 30px;
+  }
+
+  .profile-img {
+      height: 300px;
+      width: 300px;
+  }
+  
+  .tls {
+      width: 350px;
+      height: 70px;
+  }
+
+  .tls:hover {
+      width: 130px;
+      height: 200px;
+  }
+
+  .bd {
+      font-size: medium;
+      margin-left: 30px;
+  }
+
+  .content1, .content2 {
+      max-width: 400px;
+  }
+
+  .para {
+      max-width: 400px;
+  }
+
+  .imgg {
+      height: 12rem;
+      width: 12rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+      margin-top: 20px;
+  }
+
+  .profile-img {
+      height: 250px;
+      width: 250px;
+  }
+
+  .tls {
+      width: 400px;
+      height: 60px;
+  }
+
+  .tls:hover {
+      width: 120px;
+      height: 150px;
+  }
+
+  .bd {
+      font-size: small;
+      margin-left: 20px;
+  }
+
+  .content1, .content2 {
+      max-width: 300px;
+  }
+
+  .card{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .para {
+      max-width: 300px;
+  }
+
+  .imgg {
+      height: 10rem;
+      width: 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .body {
+      margin-top: 10px;
+  }
+
+  .profile-img {
+      height: 200px;
+      width: 200px;
+  }
+
+  .tls {
+      width: 250px;
+      height: 50px;
+  }
+
+  .tls:hover {
+      width: 100px;
+      height: 120px;
+  }
+
+  .bd {
+      font-size: smaller;
+      margin-left: 10px;
+  }
+
+  .content1, .content2 {
+      max-width: 200px;
+  }
+
+  .para {
+      max-width: 200px;
+  }
+
+  .imgg {
+      height: 8rem;
+      width: 8rem;
+  }
+}
